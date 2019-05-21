@@ -1,0 +1,151 @@
+doctype html
+html(lang="ru")
+
+head
+  meta(charset="UTF-8")
+  title Profile
+  meta(name="viewport" content="width=device-width, initial-scale=1")
+  meta(name="format-detection" content="telephone=no")
+  link(href="css/style.min.css" rel="stylesheet")
+
+body
+  div.profile
+    div.profile__wrapper
+      header.page-header
+        h1.visually-hidden Личное дело CSSSSR
+        div.page-header__top
+          img.page-header__logo(src="../img/logo.png" alt="Лого")
+          img.page-header__top-secret(src="../img/top-secret.png" alt="Секретно")
+        img.page-header__profile(src="../img/profile.png" alt="Дело")
+
+      form.form
+        fieldset.form__fieldset.form__fieldset--name
+          ul.form__list
+            li.form__item
+              label.form__label Полное ФИО
+              input.form__input(value="Барков Василий Алексеевич")
+            li.form__item
+              label.form__label Год рождения
+              input.form__input(value="1989")
+            li.form__item
+              label.form__label Место жительства
+              input.form__input(value="г. Санкт-Петербург, Россия")
+            li.form__item
+              label.form__label Скайп
+              input.form__input(value="vasilybarkov@mail.ru")
+            li.form__item
+              label.form__label Почта
+              input.form__input(value="vasilybarkov@mail.ru")
+
+        fieldset.form__fieldset.form__fieldset--checkboxes
+          p.form__fieldset-title Расскажите о себе чекбоксами
+          p.form__fieldset-text Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+          div.form__lists-wrapper
+            ul.form__list.form__list--first
+              li.form__item
+                input.form__input(type="checkbox" id="Method" checked)
+                label.form__label(for="Method") БЭМ/OOCSS
+              li.form__item
+                input.form__input(type="checkbox" id="Pug" checked)
+                label.form__label(for="Pug") Pug (Jade)
+              li.form__item
+                input.form__input(type="checkbox" id="Proc" checked)
+                label.form__label(for="Proc") Stylus/LESS/SASS
+              li.form__item
+                input.form__input(type="checkbox" id="Svg" checked)
+                label.form__label(for="Svg") Работаю с SVG
+              li.form__item
+                input.form__input(type="checkbox" id="Semantic" checked)
+                label.form__label(for="Semantic") Верстаю семантично
+              li.form__item
+                input.form__input(type="checkbox" id="A11Y" checked)
+                label.form__label(for="A11Y") Accessibility (A11Y)
+              li.form__item
+                input.form__input(type="checkbox" id="ES")
+                label.form__label(for="ES") ES2015/ES2016
+            ul.form__list.form__list--second
+              li.form__item
+                input.form__input(type="checkbox" id="Gulp/GRUNT" checked)
+                label.form__label(for="Gulp/GRUNT") Gulp/GRUNT
+              li.form__item
+                input.form__input(type="checkbox" id="Webpack")
+                label.form__label(for="Webpack") Webpack
+              li.form__item
+                input.form__input(type="checkbox" id="WebGL")
+                label.form__label(for="WebGL") Дружу с WebGL
+              li.form__item
+                input.form__input(type="checkbox" id="jQuery" checked)
+                label.form__label(for="jQuery") jQuery
+              li.form__item
+                input.form__input(type="checkbox" id="Angular")
+                label.form__label(for="Angular") Знаю/изучаю Angular
+              li.form__item
+                input.form__input(type="checkbox" id="React")
+                label.form__label(for="React") Знаю/изучаю React
+              li.form__item
+                input.form__input(type="checkbox" id="Node.js")
+                label.form__label(for="Node.js") Знаю/изучаю Node.js
+            ul.form__list.form__list--third
+              li.form__item
+                input.form__input(type="checkbox" id="Git" checked)
+                label.form__label(for="Git") Использую Git
+              li.form__item
+                input.form__input(type="checkbox" id="Eye" checked)
+                label.form__label(for="Eye") С глазомером всё ок
+              li.form__item
+                input.form__input(type="checkbox" id="Blog")
+                label.form__label(for="Blog") Читаю
+                  a.form__link(href="http://blog.csssr.ru/") blog.csssr.ru
+              li.form__item
+                input.form__input(type="checkbox" id="Lazy")
+                label.form__label(for="Lazy") Я ленивый(-ая)
+              li.form__item.form__item--english
+                input.form__input(type="checkbox" id="English")
+                label.form__label(for="English") У меня хороший английский
+
+
+
+
+        fieldset.form__fieldset.form__fieldset--js
+          p.form__fieldset-title Уровень владения JavaScript
+          input.form__slider(type="range" id="slider" name="volume" min="0" max="100" value="30")
+          label.form__label(for="slider")
+          div.form__slider-text-wrapper
+            span.form__slider-span-1 Не владею
+            span.form__slider-span-2 Использую готовые решения
+            span.form__slider-span-3 Использую готовые решения и умею их переделывать
+            span.form__slider-span-4 Пишу сложный JS с нуля
+
+
+
+        fieldset.form__fieldset.form__fieldset--about
+          p.form__fieldset-title Расскажите о себе словами
+          p.form__fieldset-text Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.
+          textarea.form__textarea(id="text_area" onkeyup="textarea_resize(event, 15, 2);") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, sed! Esse, sed! Esse, sed! Esse, sed! Esse, sed! Esse, sed!
+          div(id="text_area_div")
+
+
+        fieldset.form__fieldset.form__fieldset--future
+          p.form__fieldset-title Какие у вас планы на будущее?
+          p.form__fieldset-text Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
+          ul.form__list
+            li.form__item
+              input.form__input.visually-hidden(type="radio" id="page-proofs" name="future" checked)
+              label.form__label(for="page-proofs") Верстать
+            li.form__item
+              input.form__input.visually-hidden(type="radio" id="js" name="future")
+              label.form__label(for="js") Прокачиваться в JS
+            li.form__item
+              input.form__input.visually-hidden(type="radio" id="management" name="future")
+              label.form__label(for="management") Менеджерство
+            li.form__item
+              input.form__input.visually-hidden(type="radio" id="other" name="future")
+              label.form__label(for="other") Другое
+
+
+
+        fieldset.form__fieldset.form__fieldset--date
+                label.form__label(for="date") Дата заполнения
+                input.form__input(type="date" id="date" name="date" value="2019-05-21")
+
+script(src="js/script-min.js")

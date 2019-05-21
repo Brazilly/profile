@@ -1,0 +1,26 @@
+/*PT Sans Bold*/
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../../fonts/PT-Sans-Bold.woff2") format("woff2"), url("../../fonts/PT-Sans-Bold.woff") format("woff");
+}
+
+/*PT Sans Regular*/
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../../fonts/PT-Sans-Regular.woff2") format("woff2"), url("../../fonts/PT-Sans-Regular.woff") format("woff");
+}
+
+/*Courier New Regular*/
+@font-face {
+  font-family: "Courier New";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../../fonts/CourierNew-Regular.woff2") format("woff2"), url("../../fonts/CourierNew-Regular.woff") format("woff");
+}
