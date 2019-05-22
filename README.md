@@ -19,7 +19,7 @@ npm start
 **Запуск сборки в папку `dist/`**
 
 ```
-npm build
+npm run build
 ```
 
 Проект собирается с помощью 
