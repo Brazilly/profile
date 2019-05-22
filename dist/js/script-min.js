@@ -1,0 +1,1 @@
+var textArea=document.querySelector(".form__textarea");textArea.addEventListener("keyup",function(e,t,r){var a=e.target,o=document.querySelector(".form__textarea-div");o.innerHTML=a.value;var n=o.offsetHeight;13===e.keyCode?n+=15:n<30&&(n=30),a.style.height=n/1.5+"px"});

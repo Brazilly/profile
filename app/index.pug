@@ -1,0 +1,146 @@
+doctype html
+html(lang="ru")
+
+head
+  meta(charset="UTF-8")
+  link(href="css/style.min.css" rel="stylesheet")
+  title Дело разработчика Василия
+body
+  div.profile
+    div.profile__wrapper
+      header.page-header
+        h1.visually-hidden Личное дело CSSSR
+        div.page-header__top
+          img.page-header__logo(src="../img/logo.png" alt="Лого" width="154" height="52")
+          img.page-header__top-secret(src="../img/top-secret.png" alt="Секретно" width="252" height="106")
+        img.page-header__profile(src="../img/profile.png" alt="Дело" width="221" height="118")
+
+      main
+        form.form(method="post" action="#" name="profile-form")
+          fieldset.form__fieldset.form__fieldset--name
+            ul.form__list
+              li.form__item
+                label.form__label Полное ФИО
+                input.form__input(value="Барков Василий Алексеевич" placeholder="ФИО" name="name" required
+                )
+              li.form__item
+                label.form__label Год рождения
+                input.form__input(value="1989" placeholder="Год рождения" name="year" required
+                )
+              li.form__item
+                label.form__label Место жительства
+                input.form__input(value="г. Санкт-Петербург, Россия" placeholder="Город, страна" name="living-place" required
+                )
+              li.form__item
+                label.form__label Скайп
+                input.form__input(value="vasilybarkov@mail.ru" placeholder="Как нам вас найти в Skype" name="skype-id" required
+                )
+              li.form__item
+                label.form__label Почта
+                input.form__input(value="vasilybarkov@mail.ru" placeholder="Адрес электронной почты" name="email" required
+                )
+
+          fieldset.form__fieldset.form__fieldset--checkboxes
+            h2.form__fieldset-title Расскажите о себе чекбоксами
+            p.form__fieldset-text Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+            div.form__lists-wrapper
+              ul.form__list
+                li.form__item
+                  input.form__input(type="checkbox" id="method" name="method" checked)
+                  label.form__label(for="method") БЭМ/OOCSS
+                li.form__item
+                  input.form__input(type="checkbox" id="pug" name="pug" checked)
+                  label.form__label(for="pug") Pug (Jade)
+                li.form__item
+                  input.form__input(type="checkbox" id="preproc" name="preproc" checked)
+                  label.form__label(for="preproc") Stylus/LESS/SASS
+                li.form__item
+                  input.form__input(type="checkbox" id="svg" name="svg" checked)
+                  label.form__label(for="svg") Работаю с SVG
+                li.form__item
+                  input.form__input(type="checkbox" id="semantic" name="svg" checked)
+                  label.form__label(for="semantic") Верстаю семантично
+                li.form__item
+                  input.form__input(type="checkbox" id="a11y" name="a11y" checked)
+                  label.form__label(for="a11y") Accessibility (A11Y)
+                li.form__item
+                  input.form__input(type="checkbox" id="es" name="es")
+                  label.form__label(for="es") ES2015/ES2016
+              ul.form__list
+                li.form__item
+                  input.form__input(type="checkbox" id="gulp-grunt" name="gulp-grun" checked)
+                  label.form__label(for="gulp-grunt") Gulp/GRUNT
+                li.form__item
+                  input.form__input(type="checkbox" id="webpack" name="webpack")
+                  label.form__label(for="webpack") Webpack
+                li.form__item
+                  input.form__input(type="checkbox" id="webgl" name="webgl")
+                  label.form__label(for="webgl") Дружу с WebGL
+                li.form__item
+                  input.form__input(type="checkbox" id="jquery" name="jquery" checked)
+                  label.form__label(for="jquery") jQuery
+                li.form__item
+                  input.form__input(type="checkbox" id="angular" name="angular")
+                  label.form__label(for="angular") Знаю/изучаю Angular
+                li.form__item
+                  input.form__input(type="checkbox" id="react" name="react")
+                  label.form__label(for="react") Знаю/изучаю React
+                li.form__item
+                  input.form__input(type="checkbox" id="node-js" name="node-js")
+                  label.form__label(for="node-js") Знаю/изучаю Node.js
+              ul.form__list
+                li.form__item
+                  input.form__input(type="checkbox" id="git" name="git" checked)
+                  label.form__label(for="git") Использую Git
+                li.form__item
+                  input.form__input(type="checkbox" id="eye" name="eye" checked)
+                  label.form__label(for="eye") С глазомером всё ок
+                li.form__item
+                  input.form__input(type="checkbox" id="blog" name="blog")
+                  label.form__label(for="blog") Читаю
+                    a.form__link(href="http://blog.csssr.ru/" target="_blank" rel="nofollow") blog.csssr.ru
+                li.form__item
+                  input.form__input(type="checkbox" id="lazy" name="lazy")
+                  label.form__label(for="lazy") Я ленивый(-ая)
+                li.form__item.form__item--english
+                  input.form__input(type="checkbox" id="english" name="english")
+                  label.form__label(for="english") У меня хороший английский
+
+          fieldset.form__fieldset.form__fieldset--js
+            h2.form__fieldset-title Уровень владения JavaScript
+            input.form__slider(type="range" id="slider" name="volume" min="0" max="100" value="30")
+            label.form__label(for="slider")
+            div.form__slider-text-wrapper
+              span.form__slider-span Не владею
+              span.form__slider-span Использую готовые решения
+              span.form__slider-span Использую готовые решения и умею их переделывать
+              span.form__slider-span Пишу сложный JS с нуля
+
+          fieldset.form__fieldset.form__fieldset--about
+            h2.form__fieldset-title Расскажите о себе словами
+            p.form__fieldset-text Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.
+            textarea.form__textarea(placeholder="Ну-ууу-уу...\nЭЭЭЭ..." required)
+            div.form__textarea-div
+
+          fieldset.form__fieldset.form__fieldset--future
+            h2.form__fieldset-title Какие у вас планы на будущее?
+            p.form__fieldset-text Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
+            ul.form__list
+              li.form__item
+                input.form__input.visually-hidden(type="radio" id="page-proofs" name="future" checked)
+                label.form__label(for="page-proofs") Верстать
+              li.form__item
+                input.form__input.visually-hidden(type="radio" id="js" name="future")
+                label.form__label(for="js") Прокачиваться в JS
+              li.form__item
+                input.form__input.visually-hidden(type="radio" id="management" name="future")
+                label.form__label(for="management") Менеджерство
+              li.form__item
+                input.form__input.visually-hidden(type="radio" id="other" name="future")
+                label.form__label(for="other") Другое
+
+          fieldset.form__fieldset.form__fieldset--date
+                  label.form__label(for="date") Дата заполнения
+                  input.form__input(type="date" id="date" name="date" value="2019-05-23" placeholder="01.01.01" required)
+
+script(src="js/script-min.js")

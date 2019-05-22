@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru"></html>
+<head>
+  <meta charset="UTF-8">
+  <link href="css/style.min.css" rel="stylesheet">
+  <title>Дело разработчика Василия</title>
+</head>
+<body>
+  <div class="profile">
+    <div class="profile__wrapper">
+      <header class="page-header">
+        <h1 class="visually-hidden">Личное дело CSSSR</h1>
+        <div class="page-header__top"><img class="page-header__logo" src="../img/logo.png" alt="Лого" width="154" height="52"><img class="page-header__top-secret" src="../img/top-secret.png" alt="Секретно" width="252" height="106"></div><img class="page-header__profile" src="../img/profile.png" alt="Дело" width="221" height="118">
+      </header>
+      <main>
+        <form class="form" method="post" action="#" name="profile-form">
+          <fieldset class="form__fieldset form__fieldset--name">
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__label">Полное ФИО</label>
+                <input class="form__input" value="Барков Василий Алексеевич" placeholder="ФИО" name="name" required>
+              </li>
+              <li class="form__item">
+                <label class="form__label">Год рождения</label>
+                <input class="form__input" value="1989" placeholder="Год рождения" name="year" required>
+              </li>
+              <li class="form__item">
+                <label class="form__label">Место жительства</label>
+                <input class="form__input" value="г. Санкт-Петербург, Россия" placeholder="Город, страна" name="living-place" required>
+              </li>
+              <li class="form__item">
+                <label class="form__label">Скайп</label>
+                <input class="form__input" value="vasilybarkov@mail.ru" placeholder="Как нам вас найти в Skype" name="skype-id" required>
+              </li>
+              <li class="form__item">
+                <label class="form__label">Почта</label>
+                <input class="form__input" value="vasilybarkov@mail.ru" placeholder="Адрес электронной почты" name="email" required>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--checkboxes">
+            <h2 class="form__fieldset-title">Расскажите о себе чекбоксами</h2>
+            <p class="form__fieldset-text">Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</p>
+            <div class="form__lists-wrapper">
+              <ul class="form__list">
+                <li class="form__item">
+                  <input class="form__input" type="checkbox" id="method" name="method" checked>
+                  <label class="form__label" for="method">БЭМ/OOCSS</label>
+                </li>
+                <li class="form__item">
+                  <input class="form__input" type="checkbox" id="pug" name="pug" checked>
+                  <label class="form__label" for="pug">Pug (Jade)</label>
+                </li>
+                <li class="form__item">
+                  <input class="form__input" type="checkbox" id="preproc" name="preproc" checked>
+                  <label class="form__label" for="preproc">Stylus/LESS/SASS</label>
+                </li>
+                <li class="form__item">
+                  <input class="form__input" type="checkbox" id="svg" name="svg" checked>
+                  <label class="form__label" for="svg">Работаю с SVG</label>
+                </li>
+                <li class="form__item">
+                  <input class="form__input" type="checkbox" id="semantic" name="svg" checked>
+                  <label class="form__label" for="semantic">Верстаю семантично</label>
+                </li>
+                <li class="form__item">
+                  <input class="form__input" type="checkbox" id="a11y" name="a11y" checked>
+                  <label class="form__label" for="a11y">Accessibility (A11Y)</label>
+                </li>
+                <li class="form__item">
+                  <input class="form__input" type="checkbox" id="es" name="es">
+                  <label class="form__label" for="es">ES2015/ES2016</label>
+                </li>
+              </ul>
+              <ul class="form__list">
+                <li class="form__item">
+                  <input class="form__input" type="checkbox" id="gulp-grunt" name="gulp-grun" checked>
+                  <label class="form__label" for="gulp-grunt">Gulp/GRUNT</label>
+                </li>
+                <li class="form__item">
+                  <input class="form__input" type="checkbox" id="webpack" name="webpack">
+                  <label class="form__label" for="webpack">Webpack</label>
+                </li>
+                <li class="form__item">
+                  <input class="form__input" type="checkbox" id="webgl" name="webgl">
+                  <label class="form__label" for="webgl">Дружу с WebGL</label>
+                </li>
+                <li class="form__item">
+                  <input class="form__input" type="checkbox" id="jquery" name="jquery" checked>
+                  <label class="form__label" for="jquery">jQuery</label>
+                </li>
+                <li class="form__item">
+                  <input class="form__input" type="checkbox" id="angular" name="angular">
+                  <label class="form__label" for="angular">Знаю/изучаю Angular</label>
+                </li>
+                <li class="form__item">
+                  <input class="form__input" type="checkbox" id="react" name="react">
+                  <label class="form__label" for="react">Знаю/изучаю React</label>
+                </li>
+                <li class="form__item">
+                  <input class="form__input" type="checkbox" id="node-js" name="node-js">
+                  <label class="form__label" for="node-js">Знаю/изучаю Node.js</label>
+                </li>
+              </ul>
+              <ul class="form__list">
+                <li class="form__item">
+                  <input class="form__input" type="checkbox" id="git" name="git" checked>
+                  <label class="form__label" for="git">Использую Git</label>
+                </li>
+                <li class="form__item">
+                  <input class="form__input" type="checkbox" id="eye" name="eye" checked>
+                  <label class="form__label" for="eye">С глазомером всё ок</label>
+                </li>
+                <li class="form__item">
+                  <input class="form__input" type="checkbox" id="blog" name="blog">
+                  <label class="form__label" for="blog">Читаю<a class="form__link" href="http://blog.csssr.ru/" target="_blank" rel="nofollow">blog.csssr.ru</a></label>
+                </li>
+                <li class="form__item">
+                  <input class="form__input" type="checkbox" id="lazy" name="lazy">
+                  <label class="form__label" for="lazy">Я ленивый(-ая)</label>
+                </li>
+                <li class="form__item form__item--english">
+                  <input class="form__input" type="checkbox" id="english" name="english">
+                  <label class="form__label" for="english">У меня хороший английский</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--js">
+            <h2 class="form__fieldset-title">Уровень владения JavaScript</h2>
+            <input class="form__slider" type="range" id="slider" name="volume" min="0" max="100" value="30">
+            <label class="form__label" for="slider"></label>
+            <div class="form__slider-text-wrapper"><span class="form__slider-span">Не владею</span><span class="form__slider-span">Использую готовые решения</span><span class="form__slider-span">Использую готовые решения и умею их переделывать</span><span class="form__slider-span">Пишу сложный JS с нуля</span></div>
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--about">
+            <h2 class="form__fieldset-title">Расскажите о себе словами</h2>
+            <p class="form__fieldset-text">Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.</p>
+            <textarea class="form__textarea" placeholder="Ну-ууу-уу...
+ЭЭЭЭ..." required></textarea>
+            <div class="form__textarea-div"></div>
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--future">
+            <h2 class="form__fieldset-title">Какие у вас планы на будущее?</h2>
+            <p class="form__fieldset-text">Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.</p>
+            <ul class="form__list">
+              <li class="form__item">
+                <input class="form__input visually-hidden" type="radio" id="page-proofs" name="future" checked>
+                <label class="form__label" for="page-proofs">Верстать</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input visually-hidden" type="radio" id="js" name="future">
+                <label class="form__label" for="js">Прокачиваться в JS</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input visually-hidden" type="radio" id="management" name="future">
+                <label class="form__label" for="management">Менеджерство</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input visually-hidden" type="radio" id="other" name="future">
+                <label class="form__label" for="other">Другое</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--date">
+            <label class="form__label" for="date">Дата заполнения</label>
+            <input class="form__input" type="date" id="date" name="date" value="2019-05-23" placeholder="01.01.01" required>
+          </fieldset>
+        </form>
+      </main>
+    </div>
+  </div>
+</body>
+<script src="js/script-min.js"></script>
