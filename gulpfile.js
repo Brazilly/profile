@@ -85,7 +85,8 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "app/fonts/**/*.{woff,woff2}",
-    "app/img/**"
+    "app/img/**",
+    "app/favicon.ico"
   ], {
     base: "app"
   })

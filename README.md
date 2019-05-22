@@ -22,24 +22,24 @@ npm start
 npm build
 ```
 
-Проект собирается с помощью Gulp.
+Проект собирается с помощью 
 [gulp](https://www.npmjs.com/package/gulp)
 
-В проекте использован шаблонизатор Pug.
+В проекте использован шаблонизатор 
 [gulp-pug](https://www.npmjs.com/package/gulp-pug)
 
-В проекте использован препроцессор SASS.
+В проекте использован препроцессора SASS
 [gulp-sass](https://www.npmjs.com/package/gulp-sass)
 
-В проекте использован автопрефиксер.
+В проекте использован
 [autoprefixer](https://www.npmjs.com/package/autoprefixer)
 
-Файлы и изображения проекта минифицированы.
-[post-html](https://www.npmjs.com/package/gulp-posthtml)
-[post-css](https://www.npmjs.com/package/gulp-postcss)
-[gulp-csso](https://www.npmjs.com/package/gulp-csso)
-[gulp-uglify](https://www.npmjs.com/package/gulp-uglify)
-[gulp-imagemin](https://www.npmjs.com/package/gulp-imagemin)
+Файлы и изображения проекта минифицированы
+*[post-html](https://www.npmjs.com/package/gulp-posthtml)
+*[post-css](https://www.npmjs.com/package/gulp-postcss)
+*[gulp-csso](https://www.npmjs.com/package/gulp-csso)
+*[gulp-uglify](https://www.npmjs.com/package/gulp-uglify)
+*[gulp-imagemin](https://www.npmjs.com/package/gulp-imagemin)
 
 
 
