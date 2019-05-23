@@ -35,11 +35,11 @@ npm run build
 [autoprefixer](https://www.npmjs.com/package/autoprefixer)
 
 Файлы и изображения проекта минифицированы
-*[post-html](https://www.npmjs.com/package/gulp-posthtml)
-*[post-css](https://www.npmjs.com/package/gulp-postcss)
-*[gulp-csso](https://www.npmjs.com/package/gulp-csso)
-*[gulp-uglify](https://www.npmjs.com/package/gulp-uglify)
-*[gulp-imagemin](https://www.npmjs.com/package/gulp-imagemin)
+* [post-html](https://www.npmjs.com/package/gulp-posthtml)
+* [post-css](https://www.npmjs.com/package/gulp-postcss)
+* [gulp-csso](https://www.npmjs.com/package/gulp-csso)
+* [gulp-uglify](https://www.npmjs.com/package/gulp-uglify)
+* [gulp-imagemin](https://www.npmjs.com/package/gulp-imagemin)
 
 
 
